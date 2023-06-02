@@ -21,7 +21,7 @@ function Validation() {
         return false;
     };
     this.checkTK = function (value, spanID, mess) {
-        let pattern = /^[0-9]{4,6}$/;
+        let pattern = /^[0-9a-zA-Z]{4,6}$/;
         if (value.match(pattern)) {
             domID(spanID).style.display = "none";
             return true;
